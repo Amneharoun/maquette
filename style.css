@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+}
+header.header {
+  display: flex;
+  align-items: center;
+
+
+}
+header.header img{
+    width: 150px;
+
+}
+section.top-page{
+    background: url('images/bg.jpg'); 
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+   
+}
+.landing-page{
+    position: relative;
+    padding: 20px 50px;
+}
+.big-title {
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    width: 40%;
+
+}
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    margin-top: 5%;
+}
+.service-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.delivery-icon{
+    font-size: 50px;
+    color: #ADD981;
+}
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+
+    
+}
+/*nos meilleur plant */
+
+.bests{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    height: 100vh;
+   /* box-shadow: 0 100px 100px rgba(0,0,0,0.05); */
+  transition: transform 0.3s ease;
+        
+}
+
+.best-plant4{
+    flex-direction: row;
+    display: flex;
+}
+.best-plant4 img{
+    margin-top: 60%;
+    height: 450px;
+    margin-left: -70%;
+    justify-content: space-around;
+}
+.bests h2{
+    font-size: 2.1rem;
+    width: 50%;
+}
+.info1-row{
+margin-left: -68%;
+}
+.card-content1 .btn{
+    /* text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background: #00b7ff;
+    color: white;
+    font-weight: 500;
+
+
+    display: inline-block;
+  
+    padding: 8px 12px;
+    background: #a6e639;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-left: 170px; */
+    margin-top: 5px;
+    background-color: #ADD981;
+    color: #fff;
+    /* border: none; */
+    padding: 6px 10px;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: -0%;
+    margin-left: 35%;
+
+
+
+}
+/*nos meilleur plant fin*/
+/*nos plantes*/
+
+/* Section de plantes */
+  .section-plantes {
+    padding: 90px 2px; /* ↑ haut/bas, ←→ gauche/droite */
+  }
+  .plantes-special-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 15px;
+  
+    width: 70%;        /* Réduit l’ensemble */
+    margin: 0 auto;    /* Centre horizontalement */
+    min-height: 500px;
+  }
+  
+
+  .section-plantes h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5.9rem;
+    color: #111;
+    /* border-left:5px solid #ADD981; */
+    /* width: ; */
+    padding-left: 10px;
+    margin-bottom: 30px;
+    padding-left: 6%;
+  }
+  
+  /* Colonnes gauche et droite */
+  .colonne-gauche,
+  .colonne-droite {
+    display: flex;
+    flex: 1;            /* Prendre une largeur égale */
+    flex-direction: column;
+    /* gap: 15px; */
+  }
+  
+  .colonne-gauche {
+    margin-left: -12%;    
+  }
+  
+  .colonne-droite {
+    margin-right: -18%;   
+  }
+  
+  .plante {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .plante img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .plante .info {
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    right: -5px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 50px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: #90c870;
+    text-align: right;
+  }
+  
+  .plante p {
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+  }
+  
+  .plante span {
+    display: block;
+    font-size: 12px;
+    margin: 2px 0;
+    color: #90c870;
+    text-align: left;
+  }
+  
+  .plante button {
+    margin-top: 5px;
+    background-color: #ADD981;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: -20%;
+  }
+  
+  .plante button:hover {
+    background-color: #90c870;
+  }
+  #Afrah{
+    margin-left:30%;
+    margin-top: -10%;  
+}
+    
+  #Afrah2 img{
+    height: 450px; 
+    margin-top: 48%;  
+    margin-left: -51%;
+}
+#Afrah3{
+    margin-left: 3%;
+}
+#pied{
+    margin-top: -5%;
+}
