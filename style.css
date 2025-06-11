@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-*{
+{
 font-family: 'Montserrat';
 }
 html{
@@ -86,8 +86,8 @@ nav.nav li a {
     width: 100%;
     flex: 1;
     height: 100vh;
-   /* box-shadow: 0 100px 100px rgba(0,0,0,0.05); */
-  transition: transform 0.3s ease;
+   box-shadow: 0 100px 100px rgba(0,0,0,0.05);
+  /* transition: transform 0.3s ease; */
         
 }
 
@@ -109,7 +109,7 @@ nav.nav li a {
 margin-left: -68%;
 }
 .card-content1 .btn{
-    /* text-decoration: none;
+    text-decoration: none;
     text-align: center;
     padding: 10px;
     background: #00b7ff;
@@ -118,27 +118,14 @@ margin-left: -68%;
 
 
     display: inline-block;
-  
+    margin-top:-100%;
     padding: 8px 12px;
     background: #a6e639;
     color: #fff;
-    border-radius: 12px;
+    border-radius: 20px;
     font-size: 0.8em;
     text-decoration: none;
-    margin-left: 170px; */
-    margin-top: 5px;
-    background-color: #ADD981;
-    color: #fff;
-    /* border: none; */
-    padding: 6px 10px;
-    border-radius: 80px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-top: -0%;
-    margin-left: 35%;
-
-
-
+    margin-left: 150px;
 }
 /*nos meilleur plant fin*/
 /*nos plantes*/
@@ -257,8 +244,5 @@ margin-left: -68%;
     margin-left: -51%;
 }
 #Afrah3{
-    margin-left: 3%;
-}
-#pied{
-    margin-top: -5%;
+    margin-top: -3%;
 }
