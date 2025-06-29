@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header.header img {
+    width: 150px;
+}
+
+nav.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* SECTION TOP PAGE */
+section.top-page {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    padding: 25px;
+    position: relative;
+}
+
+.landing-page {
+    padding: 20px 50px;
+    text-align: center; /* pour le responsive */
+}
+
+.big-title {
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+/* SECTION SERVICES */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* SECTION BESTS SELLERS */
+.bests {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.best-plant4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plant-details {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+.plant-details img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content1 {
+    padding: 20px;
+}
+
+.info1-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-text h3 {
+    margin: 0;
+}
+
+.price {
+    color: #90c870;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #a6e639;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #90c870;
+}
+
+/* SECTION PLANTES */
+.section-plantes {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.section-plantes h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plantes-special-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plante {
+    position: relative;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plante img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.plante .info {
+    padding: 15px;
+    text-align: left;
+}
+
+.plante p {
+    margin: 0;
+    font-weight: bold;
+    color: #111;
+}
+
+.plante span {
+    display: block;
+    margin: 8px 0;
+    color: #90c870;
+}
+
+.plante button {
+    background-color: #ADD981;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.plante button:hover {
+    background-color: #90c870;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .big-title {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    header.header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .section-plantes h2 {
+        font-size: 2.5rem;
+    }
+}
